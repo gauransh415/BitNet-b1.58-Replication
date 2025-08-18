@@ -1,0 +1,23 @@
+[project]
+name = "bitnet-b1-58-replication"
+version = "0.1.0"
+description = "Project to replicate the results of the Era of 1-bit LLMs paper"
+authors = [
+    {name = "Gauransh Sharma",email = "gs7148@srmist.edu.in"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "bitnet_b1"}]
+
+[tool.poetry.group.dev.dependencies]
+torch = "^2.2.0"
+transformers = { git = "https://github.com/shumingma/transformers.git"}
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
